@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ই-পাসপোর্ট আবেদন গাইড ২০২৬: ফি, কাগজপত্র ও ধাপ | সহজ সেবা</title>
+<meta name="description" content="বাংলাদেশে ই-পাসপোর্টের অনলাইন আবেদনের ধাপে ধাপে গাইড, প্রয়োজনীয় কাগজ ও ফি ক্যালকুলেটর।">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a href="index.html">সহজ সেবা</a>
+    <nav><a href="index.html">হোম</a><a href="nid.html">NID</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <span class="badge">পাসপোর্ট</span>
+    <h1>ই-পাসপোর্ট আবেদন গাইড</h1>
+    <p class="updated">শেষ যাচাই: ১৭ অক্টোবর ২০২৬ · সরকারি সাইট: <a href="https://www.epassport.gov.bd" target="_blank" rel="noopener">epassport.gov.bd</a></p>
+  </section>
+
+  <div class="notice">ফি ও নিয়ম বদলাতে পারে। আবেদনের আগে <a href="https://www.epassport.gov.bd" target="_blank" rel="noopener">সরকারি সাইটে</a> একবার মিলিয়ে নিন।</div>
+
+  <section class="card">
+    <h2>ধাপে ধাপে আবেদন</h2>
+    <div class="step-count" id="step-count"></div>
+    <div class="progress"><div id="bar"></div></div>
+    <div class="step-body" id="step-body"></div>
+    <div class="btns">
+      <button class="ghost" id="prev">আগের ধাপ</button>
+      <button class="primary" id="next">পরের ধাপ</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>ফি ক্যালকুলেটর</h2>
+    <label for="age">আবেদনকারীর বয়স</label>
+    <select id="age">
+      <option value="adult">১৮ বছর বা তার বেশি</option>
+      <option value="minor">১৮ বছরের নিচে</option>
+    </select>
+    <div id="age-note" class="notice" style="display:none">১৮ বছরের নিচে শুধু ৫ বছর মেয়াদের পাসপোর্ট দেওয়া হয়।</div>
+
+    <label for="pages">পৃষ্ঠা সংখ্যা</label>
+    <select id="pages">
+      <option value="48">৪৮ পৃষ্ঠা</option>
+      <option value="64">৬৪ পৃষ্ঠা</option>
+    </select>
+
+    <label for="validity">মেয়াদ</label>
+    <select id="validity">
+      <option value="5">৫ বছর</option>
+      <option value="10" selected>১০ বছর</option>
+    </select>
+
+    <label for="speed">ডেলিভারির ধরন</label>
+    <select id="speed">
+      <option value="0">সাধারণ</option>
+      <option value="1">জরুরি</option>
+      <option value="2">অতি জরুরি</option>
+    </select>
+
+    <div class="result">
+      <div class="amount" id="amount"></div>
+      <div class="time" id="time"></div>
+      <div class="updated">ভ্যাটসহ, টাকার অঙ্ক</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>লাগবে যা যা</h2>
+    <ul class="docs">
+      <li>জাতীয় পরিচয়পত্র (NID) অথবা ১৭ সংখ্যার অনলাইনে যাচাইযোগ্য জন্মনিবন্ধন সনদ</li>
+      <li>আবেদনের সারসংক্ষেপ (প্রিন্ট করা), যাতে বায়োমেট্রিকের সময় লেখা থাকে</li>
+      <li>পূরণ করা অনলাইন আবেদন ফর্মের প্রিন্ট</li>
+      <li>ফি পরিশোধের রসিদ</li>
+      <li>৬ বছরের কম বয়সী শিশুর জন্য ধূসর ব্যাকগ্রাউন্ডে সাম্প্রতিক ছবি</li>
+    </ul>
+    <p class="updated">সরকারি চাকরিজীবী, শিক্ষার্থী বা অন্য পেশার ক্ষেত্রে বাড়তি কাগজ লাগতে পারে। বিস্তারিত সরকারি সাইটে দেখুন।</p>
+  </section>
+
+  <section class="card">
+    <h2>ফি একনজরে (৪৮ পৃষ্ঠা)</h2>
+    <table>
+      <tr><th>মেয়াদ</th><th>সাধারণ</th><th>জরুরি</th><th>অতি জরুরি</th></tr>
+      <tr><td>৫ বছর</td><td>৪,০২৫</td><td>৬,৩২৫</td><td>৮,৬২৫</td></tr>
+      <tr><td>১০ বছর</td><td>৫,৭৫০</td><td>৮,০৫০</td><td>১০,৩৫০</td></tr>
+    </table>
+    <p class="updated">সাধারণ: ১৫–২১ কার্যদিবস · জরুরি: ৭–১০ কার্যদিবস · অতি জরুরি: ২ কার্যদিবস। বর্তমানে আবেদনে পুলিশ ভেরিফিকেশন লাগে না বলে গণমাধ্যমে জানানো হয়েছে।</p>
+  </section>
+
+  <section class="card">
+    <h2>দরকারি সরকারি লিংক</h2>
+    <ul class="docs">
+      <li><a href="https://www.epassport.gov.bd" target="_blank" rel="noopener">অনলাইন আবেদন ও স্ট্যাটাস চেক (epassport.gov.bd)</a></li>
+      <li><a href="https://everify.bdris.gov.bd" target="_blank" rel="noopener">জন্মনিবন্ধন যাচাই (everify.bdris.gov.bd)</a></li>
+      <li><a href="https://dip.gov.bd" target="_blank" rel="noopener">অধিদপ্তর, অফিসের তালিকা (dip.gov.bd)</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">এটি বেসরকারি তথ্যসেবা। সরকারি সাইটের তথ্যই চূড়ান্ত।</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

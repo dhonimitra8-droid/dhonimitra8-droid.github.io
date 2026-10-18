@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NID সংশোধন গাইড ২০২৬: অনলাইনে আবেদন, ফি ও কাগজপত্র | সহজ সেবা</title>
+<meta name="description" content="জাতীয় পরিচয়পত্র (NID) অনলাইনে সংশোধনের ধাপে ধাপে বাংলা গাইড, কোন তথ্যের জন্য কী কাগজ লাগে এবং সংশোধন ফি।">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a href="index.html">সহজ সেবা</a>
+    <nav><a href="index.html">হোম</a><a href="passport.html">ই-পাসপোর্ট</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <span class="badge">জাতীয় পরিচয়পত্র</span>
+    <h1>NID সংশোধন গাইড</h1>
+    <p class="updated">শেষ যাচাই: ১৮ অক্টোবর ২০২৬ · সরকারি পোর্টাল: <a href="https://services.nidw.gov.bd" target="_blank" rel="noopener">services.nidw.gov.bd</a></p>
+  </section>
+
+  <div class="notice">ফি ও নিয়ম বদলাতে পারে। আবেদনের আগে <a href="https://services.nidw.gov.bd" target="_blank" rel="noopener">সরকারি পোর্টালে</a> একবার মিলিয়ে নিন।</div>
+
+  <section class="card">
+    <h2>ধাপে ধাপে অনলাইনে সংশোধন</h2>
+    <div class="step-count" id="step-count"></div>
+    <div class="progress"><div id="bar"></div></div>
+    <div class="step-body" id="step-body"></div>
+    <div class="btns">
+      <button class="ghost" id="prev">আগের ধাপ</button>
+      <button class="primary" id="next">পরের ধাপ</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>কোন তথ্যে কী কাগজ লাগবে</h2>
+    <label for="field">কী সংশোধন করবেন?</label>
+    <select id="field">
+      <option value="name">নাম</option>
+      <option value="parents">পিতা বা মাতার নাম</option>
+      <option value="dob">জন্মতারিখ</option>
+      <option value="present">বর্তমান ঠিকানা</option>
+      <option value="permanent">স্থায়ী ঠিকানা</option>
+      <option value="blood">রক্তের গ্রুপ</option>
+    </select>
+    <ul class="docs" id="doc-list" style="margin-top:12px"></ul>
+    <p class="updated" id="doc-note"></p>
+  </section>
+
+  <section class="card">
+    <h2>সংশোধন ফি</h2>
+    <label for="kind">তথ্যের ধরন</label>
+    <select id="kind">
+      <option value="visible">কার্ডে ছাপা তথ্য (নাম, পিতা-মাতার নাম, জন্মতারিখ ইত্যাদি)</option>
+      <option value="hidden">কার্ডে ছাপা নেই এমন তথ্য</option>
+    </select>
+    <label for="times">কত বারের সংশোধন?</label>
+    <select id="times">
+      <option value="0">প্রথমবার</option>
+      <option value="1">দ্বিতীয়বার</option>
+      <option value="2">তৃতীয় বা তার পরের বার</option>
+    </select>
+    <div class="result">
+      <div class="amount" id="fee"></div>
+      <div class="updated">১৫% ভ্যাটসহ, টাকার অঙ্ক</div>
+    </div>
+    <p class="updated">ঠিকানা কোন ধরনে পড়বে, তা পোর্টালে আবেদনের সময় দেখে নিন। কোনো কোনো সূত্র আলাদা ধরন বলেছে।</p>
+  </section>
+
+  <section class="card">
+    <h2>কিছু জরুরি কথা</h2>
+    <ul class="docs">
+      <li>সব কাগজ পরিষ্কার স্ক্যান বা ছবি হতে হবে। ফাইল ছোট রাখুন (প্রায় ২০০ কেবির নিচে) এবং JPG বা PDF দিন।</li>
+      <li>নামের বানান বা জন্মতারিখের মতো তথ্য সংশোধনে সংশ্লিষ্ট সনদের তথ্যের সঙ্গে হুবহু মিল থাকতে হয়।</li>
+      <li>জন্মতারিখ সংশোধনে অনেক সময় উপজেলা বা জেলা নির্বাচন অফিসে সরাসরি যেতে হতে পারে।</li>
+      <li>কত দিনে হবে, তার নির্দিষ্ট সময় নেই। তথ্যের ধরন ও কাগজ যাচাইয়ের ওপর নির্ভর করে। সাধারণত কয়েক সপ্তাহ লাগে।</li>
+      <li>দালাল ধরবেন না। আবেদন নিজেই অনলাইনে করা যায়। সংশোধনের সরকারি ফি খুব অল্প।</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>দরকারি সরকারি লিংক</h2>
+    <ul class="docs">
+      <li><a href="https://services.nidw.gov.bd" target="_blank" rel="noopener">NID অনলাইন সেবা পোর্টাল (services.nidw.gov.bd)</a></li>
+      <li><a href="https://everify.bdris.gov.bd" target="_blank" rel="noopener">জন্মনিবন্ধন যাচাই (everify.bdris.gov.bd)</a></li>
+      <li><a href="https://www.ecs.gov.bd" target="_blank" rel="noopener">নির্বাচন কমিশন সচিবালয় (ecs.gov.bd)</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">এটি বেসরকারি তথ্যসেবা। সরকারি পোর্টালের তথ্যই চূড়ান্ত।</div>
+</footer>
+
+<script>
+const bn = n => n.toLocaleString("bn-BD");
+
+// ---------- ধাপে ধাপে গাইড ----------
+const STEPS = [
+  { t: "কী কী তথ্য ঠিক করবেন, ঠিক করুন", d: "আগে লিখে নিন কোন কোন তথ্য ভুল আছে এবং সঠিক তথ্য কী। নিচের 'কোন তথ্যে কী কাগজ লাগবে' অংশ থেকে কাগজের তালিকা দেখে প্রস্তুত রাখুন।" },
+  { t: "অনলাইন সেবা পোর্টালে ঢুকুন", d: "ব্রাউজারে services.nidw.gov.bd খুলুন। প্রথমবার হলে NID নম্বর, জন্মতারিখ ও মোবাইল নম্বর দিয়ে অ্যাকাউন্ট খুলুন বা লগইন করুন। মোবাইলে ওটিপি আসবে। পোর্টাল চাইলে NID Wallet অ্যাপ দিয়ে মুখ যাচাই করতে হতে পারে।" },
+  { t: "সংশোধনের অপশন বাছুন", d: "লগইনের পর প্রোফাইলে 'সংশোধন' বা 'Edit' অপশনে যান। যে তথ্য বদলাতে চান সেটা বেছে নিন এবং সঠিক তথ্য লিখুন।" },
+  { t: "কাগজ আপলোড করুন", d: "সনদ বা প্রমাণপত্রের পরিষ্কার স্ক্যান বা ছবি আপলোড করুন। ফাইল JPG বা PDF হবে এবং আকারে ছোট রাখতে হবে।" },
+  { t: "ফি দিন", d: "বিকাশ, নগদ, রকেট বা কার্ডে অনলাইনে ফি দেওয়া যায়। লেনদেনের রসিদ বা নম্বর সংরক্ষণ করুন।" },
+  { t: "আবেদন জমা দিন", d: "সব তথ্য আবার মিলিয়ে 'Submit' দিন। জমা দেওয়ার পর আবেদনের নম্বর বা রসিদ রেখে দিন।" },
+  { t: "অপেক্ষা ও ডাউনলোড", d: "যাচাই শেষ হলে মোবাইলে এসএমএস আসতে পারে। তখন একই পোর্টালে ঢুকে সংশোধিত NID ডাউনলোড করুন। প্রয়োজনে নির্বাচন অফিস কাগজ বা সরাসরি উপস্থিতি চাইতে পারে।" }
+];
+(function () {
+  const box = document.getElementById("step-body");
+  const bar = document.getElementById("bar");
+  const count = document.getElementById("step-count");
+  const prev = document.getElementById("prev");
+  const next = document.getElementById("next");
+  let i = 0;
+  function render() {
+    const s = STEPS[i];
+    box.innerHTML = "<h3></h3><p></p>";
+    box.querySelector("h3").textContent = s.t;
+    box.querySelector("p").textContent = s.d;
+    count.textContent = "ধাপ " + bn(i + 1) + " / " + bn(STEPS.length);
+    bar.style.width = ((i + 1) / STEPS.length * 100) + "%";
+    prev.disabled = i === 0;
+    next.textContent = i === STEPS.length - 1 ? "শুরু থেকে দেখুন" : "পরের ধাপ";
+  }
+  prev.addEventListener("click", () => { if (i > 0) { i--; render(); } });
+  next.addEventListener("click", () => { i = i === STEPS.length - 1 ? 0 : i + 1; render(); });
+  render();
+})();
+
+// ---------- কাগজের তালিকা ----------
+const DOCS = {
+  name: { l: ["জন্মনিবন্ধন সনদ", "SSC বা HSC সনদ (থাকলে)", "পাসপোর্ট (থাকলে)"], n: "সনদের বানানের সঙ্গে হুবহু মিল থাকতে হবে।" },
+  parents: { l: ["পিতা বা মাতার NID-এর কপি", "জন্মনিবন্ধন সনদ"], n: "পিতা বা মাতার NID-তে নাম যেভাবে আছে, সেভাবেই লিখুন।" },
+  dob: { l: ["মূল জন্মনিবন্ধন সনদ", "SSC বা HSC সনদ", "নোটারি করা হলফনামা", "পিতা বা মাতার NID (জীবিত থাকলে)"], n: "এই সংশোধনে উপজেলা বা জেলা নির্বাচন অফিসে সরাসরি যেতে হতে পারে। সময়ও বেশি লাগে।" },
+  present: { l: ["বিদ্যুৎ বা গ্যাস বিলের কপি", "নাগরিকত্ব সনদ বা ভাড়ার চুক্তি (থাকলে)"], n: "বিলে যে ঠিকানা আছে, সেটাই লিখুন।" },
+  permanent: { l: ["জমির দলিল বা খতিয়ান", "ইউনিয়ন পরিষদ চেয়ারম্যান বা কাউন্সিলরের সনদ"], n: "ঠিকানা বদলের ক্ষেত্রে স্থানীয় সনদ বেশি কাজে লাগে।" },
+  blood: { l: ["প্যাথলজি রিপোর্ট"], n: "রিপোর্টে রক্তের গ্রুপ পরিষ্কার লেখা থাকতে হবে।" }
+};
+(function () {
+  const sel = document.getElementById("field");
+  const ul = document.getElementById("doc-list");
+  const note = document.getElementById("doc-note");
+  function render() {
+    const d = DOCS[sel.value];
+    ul.innerHTML = "";
+    d.l.forEach(t => { const li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
+    note.textContent = d.n + " কাগজের তালিকা সূত্র ভেদে সামান্য আলাদা হতে পারে, তাই পোর্টালে চূড়ান্ত তালিকা দেখে নিন।";
+  }
+  sel.addEventListener("change", render);
+  render();
+})();
+
+// ---------- ফি ----------
+// তথ্যসূত্র: একাধিক গাইড সাইট। মূল ফি ২০০/৩০০/৪০০ (দৃশ্যমান) ও ১০০/২০০/৩০০ (অদৃশ্য), ১৫% ভ্যাটসহ।
+const FEE = { visible: [230, 345, 460], hidden: [115, 230, 345] };
+(function () {
+  const kind = document.getElementById("kind");
+  const times = document.getElementById("times");
+  const out = document.getElementById("fee");
+  function render() { out.textContent = "৳ " + bn(FEE[kind.value][Number(times.value)]); }
+  kind.addEventListener("change", render);
+  times.addEventListener("change", render);
+  render();
+})();
+</script>
+</body>
+</html>
